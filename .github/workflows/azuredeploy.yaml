@@ -22,8 +22,8 @@ on: workflow_dispatch
 env:
   AZURE_RESOURCE_GROUP: gp-dotnet-1  # target resource, must match the {resource-group-name} you setup in the pre-requisties
   WEB_APP_NAME: gpdotwebapp1         # set the name for the Web App on Azure
-  ACR_NAME: gpacrtodosample               # set the name for the Azure Container Registry
-  CONTAINER_IMAGE_NAME: app-todo-sample # set the name for the container image
+  ACR_NAME: gpacrsample               # set the name for the Azure Container Registry
+  CONTAINER_IMAGE_NAME: gpapp-sample # set the name for the container image
   SQL_SERVER_NAME: gpdotsql1      # set the name for the Azure SQL Server
   SQL_SERVER_ADMIN_LOGIN: dbadminlogin  # set the name for the Azure SQL Server admin login
   SQL_SERVER_ADMIN_PASSWORD: ${{ secrets.SQL_SERVER_ADMIN_PASSWORD }}  # password for the Azure SQL Sever admin login -> must be in the secrets
