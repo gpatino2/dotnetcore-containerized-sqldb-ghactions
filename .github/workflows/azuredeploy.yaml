@@ -38,7 +38,7 @@ jobs:
     
     # This example uses federated identity (OIDC) for authentication
     - name: Login for az cli commands 
-    - uses: azure/login@v2
+      uses: azure/login@v2
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
       
