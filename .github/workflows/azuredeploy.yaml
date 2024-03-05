@@ -22,7 +22,7 @@ on: workflow_dispatch
 env:
   AZURE_RESOURCE_GROUP: gp-dotnet-1  # target resource, must match the {resource-group-name} you setup in the pre-requisties
   WEB_APP_NAME: gpdotwebapp1         # set the name for the Web App on Azure
-  ACR_NAME: gpacr1               # set the name for the Azure Container Registry
+  ACR_NAME: gptestacr1               # set the name for the Azure Container Registry
   CONTAINER_IMAGE_NAME: gpapp-img # set the name for the container image
   SQL_SERVER_NAME: gpdotsql1      # set the name for the Azure SQL Server
   SQL_SERVER_ADMIN_LOGIN: dbadminlogin  # set the name for the Azure SQL Server admin login
