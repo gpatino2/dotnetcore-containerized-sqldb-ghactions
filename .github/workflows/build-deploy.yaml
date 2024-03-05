@@ -121,7 +121,7 @@ jobs:
           ]
 
     - name: Deploy Azure WebApp to Staging
-      uses: azure/webapps-deploy@v2
+      uses: azure/webapps-deploy@v3
       with: 
         app-name: ${{ env.WEB_APP_NAME }} 
         images: ${{ env.ACR_LOGIN_SERVER }}/${{ env.CONTAINER_IMAGE_NAME }}:${{ github.sha }}
